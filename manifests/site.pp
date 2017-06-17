@@ -29,4 +29,11 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+      notify { 'my message':
+         message => 'checking to see if push works'    
+      
+	}
+
+         
+
 }
