@@ -30,7 +30,7 @@ node default {
   # Example:
   #   class { 'my_class': }
       notify { 'my message':
-         message => 'new changes to prod 1'    
+         message => 'new changes to prod 2'    
       
 	}
 
