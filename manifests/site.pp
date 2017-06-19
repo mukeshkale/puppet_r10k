@@ -25,7 +25,7 @@
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node webservers {
+node webserver {
 	notify { 'weserver message':
         	message => 'this message is only for webservers'
 
