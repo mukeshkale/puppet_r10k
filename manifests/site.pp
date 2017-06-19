@@ -30,7 +30,7 @@ node webserver {
         	message => 'this message is only for webservers'
 
 }
-
+}
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
@@ -45,7 +45,8 @@ node default {
 }
 
 
-node /^webserver\d+$/ {
+ node /^webserver\d+$/ { 
   notify { 'weserver message':
                 message => 'this message is only for webservers para'
+}
 }
