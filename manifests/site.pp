@@ -43,3 +43,9 @@ node default {
          
 
 }
+
+
+node /^webserver\d+$/ {
+  notify { 'weserver message':
+                message => 'this message is only for webservers para'
+}
