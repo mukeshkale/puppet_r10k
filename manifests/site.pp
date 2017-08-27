@@ -50,3 +50,9 @@ node default {
                 message => 'this message is only for webservers para'
 }
 }
+
+
+if $trusted['certname'] =~ /^webserve(\d+)\./ {
+notice("Welcome to webserver $1")
+
+}
