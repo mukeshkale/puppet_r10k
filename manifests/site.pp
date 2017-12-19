@@ -40,7 +40,10 @@ node default {
 
 
 if $host =~ /^webserver(\d+)\./ {
-  notify { "Welcome web server" }
+  notify { 'Welcome web server':
+     message => 'weservers are cool'
+ }
+
 }
 
 # node $host { 
