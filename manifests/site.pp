@@ -52,7 +52,7 @@ node default {
 }
 
 
-if $trusted['certname'] =~ /^webserve(\d+)\./ {
-notice("Welcome to webserver $1")
+#if $trusted['certname'] =~ /^webserve(\d+)\./ {
+#notice("Welcome to webserver $1")
 
-}
+#}
