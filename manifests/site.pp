@@ -25,14 +25,13 @@
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node $::app_name {
+case $::application_name {
+        'myapp1': {
+          notify { 
+            'message':
+               message = > 'My app1 selected in case'
 
-if $app_name =~ /^webserver(\d+)\./ {
- warning('This is webservers message')
-}
-else {
- warning('Default message')
-
-}
-
+                 }
+          warning ('did not slect any app')
+              }
 }
