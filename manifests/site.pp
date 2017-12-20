@@ -29,7 +29,7 @@ case $::application_name {
         'myapp1': {
           notify { 
             'message':
-               message = > 'My app1 selected in case'
+               message => 'My app1 selected in case'
 
                  }
           warning ('did not slect any app')
